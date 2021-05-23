@@ -9,6 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
   # Pods for iosWaiter
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/Database'
 
 
  
