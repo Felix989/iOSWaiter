@@ -14,11 +14,10 @@
 		3F23CCF4263D8413008B9100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F23CCF3263D8413008B9100 /* Assets.xcassets */; };
 		3F23CCF7263D8413008B9100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F23CCF5263D8413008B9100 /* LaunchScreen.storyboard */; };
 		3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6A26559F130031286A /* orderedItem.swift */; };
+		3FBEAC6F265941940031286A /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6E265941940031286A /* logInController.swift */; };
+		3FBEAC7126594DB10031286A /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC7026594DB10031286A /* registerController.swift */; };
+		3FBEAC7326594DBE0031286A /* finishedOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC7226594DBE0031286A /* finishedOrderController.swift */; };
 		3FC7897826557894005148A3 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7897726557894005148A3 /* OrderController.swift */; };
-		3FE94614263DF74800E4FB62 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94613263DF74800E4FB62 /* Pizza.swift */; };
-		3FE94616263EF08400E4FB62 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94615263EF08400E4FB62 /* ShoppingCart.swift */; };
-		3FE94618263EF19700E4FB62 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94617263EF19700E4FB62 /* Burger.swift */; };
-		3FE9461A263EF1AE00E4FB62 /* Asian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94619263EF1AE00E4FB62 /* Asian.swift */; };
 		3FE9461C263EFA0300E4FB62 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9461B263EFA0300E4FB62 /* Person.swift */; };
 		3FE9461E263EFCED00E4FB62 /* PizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9461D263EFCED00E4FB62 /* PizzaController.swift */; };
 		3FE94620263EFFD200E4FB62 /* AsianController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9461F263EFFD200E4FB62 /* AsianController.swift */; };
@@ -37,11 +36,10 @@
 		3F23CCF8263D8413008B9100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F23CCFE263D8434008B9100 /* iosWaiter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosWaiter.entitlements; sourceTree = "<group>"; };
 		3FBEAC6A26559F130031286A /* orderedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderedItem.swift; sourceTree = "<group>"; };
+		3FBEAC6E265941940031286A /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
+		3FBEAC7026594DB10031286A /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
+		3FBEAC7226594DBE0031286A /* finishedOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishedOrderController.swift; sourceTree = "<group>"; };
 		3FC7897726557894005148A3 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
-		3FE94613263DF74800E4FB62 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
-		3FE94615263EF08400E4FB62 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
-		3FE94617263EF19700E4FB62 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
-		3FE94619263EF1AE00E4FB62 /* Asian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asian.swift; sourceTree = "<group>"; };
 		3FE9461B263EFA0300E4FB62 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3FE9461D263EFCED00E4FB62 /* PizzaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaController.swift; sourceTree = "<group>"; };
 		3FE9461F263EFFD200E4FB62 /* AsianController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianController.swift; sourceTree = "<group>"; };
@@ -79,27 +77,42 @@
 		3F23CCE8263D8411008B9100 /* iosWaiter */ = {
 			isa = PBXGroup;
 			children = (
-				3FE9461B263EFA0300E4FB62 /* Person.swift */,
+				3FBEAC752659532F0031286A /* DTO */,
+				3FBEAC74265953020031286A /* Controller */,
 				3F23CCFE263D8434008B9100 /* iosWaiter.entitlements */,
 				3F23CCE9263D8411008B9100 /* AppDelegate.swift */,
-				3F23CCEB263D8411008B9100 /* ViewController.swift */,
 				3F23CCED263D8411008B9100 /* Main.storyboard */,
 				3F23CCF3263D8413008B9100 /* Assets.xcassets */,
 				3F23CCF5263D8413008B9100 /* LaunchScreen.storyboard */,
 				3F23CCF8263D8413008B9100 /* Info.plist */,
 				3F23CCF0263D8411008B9100 /* iosWaiter.xcdatamodeld */,
-				3FE94613263DF74800E4FB62 /* Pizza.swift */,
-				3FE94615263EF08400E4FB62 /* ShoppingCart.swift */,
-				3FE94617263EF19700E4FB62 /* Burger.swift */,
-				3FE94619263EF1AE00E4FB62 /* Asian.swift */,
-				3FE9461D263EFCED00E4FB62 /* PizzaController.swift */,
-				3FE9461F263EFFD200E4FB62 /* AsianController.swift */,
-				3FE94621263EFFE000E4FB62 /* BurgerController.swift */,
-				3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */,
-				3FC7897726557894005148A3 /* OrderController.swift */,
-				3FBEAC6A26559F130031286A /* orderedItem.swift */,
 			);
 			path = iosWaiter;
+			sourceTree = "<group>";
+		};
+		3FBEAC74265953020031286A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEAC7026594DB10031286A /* registerController.swift */,
+				3FC7897726557894005148A3 /* OrderController.swift */,
+				3FE9461F263EFFD200E4FB62 /* AsianController.swift */,
+				3FE94621263EFFE000E4FB62 /* BurgerController.swift */,
+				3FE9461D263EFCED00E4FB62 /* PizzaController.swift */,
+				3F23CCEB263D8411008B9100 /* ViewController.swift */,
+				3FBEAC6E265941940031286A /* logInController.swift */,
+				3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */,
+				3FBEAC7226594DBE0031286A /* finishedOrderController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FBEAC752659532F0031286A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				3FE9461B263EFA0300E4FB62 /* Person.swift */,
+				3FBEAC6A26559F130031286A /* orderedItem.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,15 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC7897826557894005148A3 /* OrderController.swift in Sources */,
-				3FE94618263EF19700E4FB62 /* Burger.swift in Sources */,
 				3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */,
-				3FE94616263EF08400E4FB62 /* ShoppingCart.swift in Sources */,
 				3FE94620263EFFD200E4FB62 /* AsianController.swift in Sources */,
-				3FE94614263DF74800E4FB62 /* Pizza.swift in Sources */,
-				3FE9461A263EF1AE00E4FB62 /* Asian.swift in Sources */,
 				3FE94622263EFFE000E4FB62 /* BurgerController.swift in Sources */,
+				3FBEAC7126594DB10031286A /* registerController.swift in Sources */,
+				3FBEAC6F265941940031286A /* logInController.swift in Sources */,
 				3FE9461E263EFCED00E4FB62 /* PizzaController.swift in Sources */,
 				3F23CCEC263D8411008B9100 /* ViewController.swift in Sources */,
+				3FBEAC7326594DBE0031286A /* finishedOrderController.swift in Sources */,
 				3F23CCF2263D8411008B9100 /* iosWaiter.xcdatamodeld in Sources */,
 				3FE9461C263EFA0300E4FB62 /* Person.swift in Sources */,
 				3F23CCEA263D8411008B9100 /* AppDelegate.swift in Sources */,
