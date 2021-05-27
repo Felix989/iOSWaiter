@@ -13,6 +13,10 @@
 		3F23CCF2263D8411008B9100 /* iosWaiter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CCF0263D8411008B9100 /* iosWaiter.xcdatamodeld */; };
 		3F23CCF4263D8413008B9100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F23CCF3263D8413008B9100 /* Assets.xcassets */; };
 		3F23CCF7263D8413008B9100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F23CCF5263D8413008B9100 /* LaunchScreen.storyboard */; };
+		3FB729C0265BD33500B15496 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729BF265BD33500B15496 /* SettingsController.swift */; };
+		3FB729C2265BD5AD00B15496 /* savedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C1265BD5AD00B15496 /* savedSettings.swift */; };
+		3FB729C4265ECCCE00B15496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C3265ECCCE00B15496 /* User.swift */; };
+		3FB729C6265ECCE700B15496 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C5265ECCE700B15496 /* UserController.swift */; };
 		3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6A26559F130031286A /* orderedItem.swift */; };
 		3FBEAC6F265941940031286A /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6E265941940031286A /* logInController.swift */; };
 		3FBEAC7126594DB10031286A /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC7026594DB10031286A /* registerController.swift */; };
@@ -40,6 +44,10 @@
 		3F23CCF6263D8413008B9100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F23CCF8263D8413008B9100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F23CCFE263D8434008B9100 /* iosWaiter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosWaiter.entitlements; sourceTree = "<group>"; };
+		3FB729BF265BD33500B15496 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		3FB729C1265BD5AD00B15496 /* savedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedSettings.swift; sourceTree = "<group>"; };
+		3FB729C3265ECCCE00B15496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3FB729C5265ECCE700B15496 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		3FBEAC6A26559F130031286A /* orderedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderedItem.swift; sourceTree = "<group>"; };
 		3FBEAC6E265941940031286A /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		3FBEAC7026594DB10031286A /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
@@ -75,7 +83,6 @@
 				707BC5A85346C038DB57194C /* Pods-iosWaiter.debug.xcconfig */,
 				6A5E0B923E3784C7F73CA1E0 /* Pods-iosWaiter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,7 @@
 				3FBEAC6E265941940031286A /* logInController.swift */,
 				3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */,
 				3FBEAC7226594DBE0031286A /* finishedOrderController.swift */,
+				3FB729BF265BD33500B15496 /* SettingsController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 			children = (
 				3FE9461B263EFA0300E4FB62 /* Person.swift */,
 				3FBEAC6A26559F130031286A /* orderedItem.swift */,
+				3FB729C1265BD5AD00B15496 /* savedSettings.swift */,
+				3FB729C3265ECCCE00B15496 /* User.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 			children = (
 				3FBEAC77265A65EA0031286A /* DatabaseController.swift */,
 				3FBEAC79265A680A0031286A /* Order.swift */,
+				3FB729C5265ECCE700B15496 /* UserController.swift */,
 			);
 			path = DatabaseControllers;
 			sourceTree = "<group>";
@@ -237,15 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-iosWaiter-checkManifestLockResult.txt",
 			);
@@ -259,13 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosWaiter/Pods-iosWaiter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosWaiter/Pods-iosWaiter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosWaiter/Pods-iosWaiter-frameworks.sh\"\n";
@@ -278,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB729C6265ECCE700B15496 /* UserController.swift in Sources */,
 				3FC7897826557894005148A3 /* OrderController.swift in Sources */,
 				3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */,
 				3FE94620263EFFD200E4FB62 /* AsianController.swift in Sources */,
@@ -286,10 +288,13 @@
 				3FBEAC6F265941940031286A /* logInController.swift in Sources */,
 				3FBEAC78265A65EA0031286A /* DatabaseController.swift in Sources */,
 				3FE9461E263EFCED00E4FB62 /* PizzaController.swift in Sources */,
+				3FB729C2265BD5AD00B15496 /* savedSettings.swift in Sources */,
+				3FB729C0265BD33500B15496 /* SettingsController.swift in Sources */,
 				3F23CCEC263D8411008B9100 /* ViewController.swift in Sources */,
 				3FBEAC7326594DBE0031286A /* finishedOrderController.swift in Sources */,
 				3F23CCF2263D8411008B9100 /* iosWaiter.xcdatamodeld in Sources */,
 				3FE9461C263EFA0300E4FB62 /* Person.swift in Sources */,
+				3FB729C4265ECCCE00B15496 /* User.swift in Sources */,
 				3FBEAC7A265A680A0031286A /* Order.swift in Sources */,
 				3F23CCEA263D8411008B9100 /* AppDelegate.swift in Sources */,
 				3FE94624263F121000E4FB62 /* GeneralOrderInfo.swift in Sources */,
