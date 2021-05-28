@@ -17,6 +17,7 @@
 		3FB729C2265BD5AD00B15496 /* savedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C1265BD5AD00B15496 /* savedSettings.swift */; };
 		3FB729C4265ECCCE00B15496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C3265ECCCE00B15496 /* User.swift */; };
 		3FB729C6265ECCE700B15496 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C5265ECCE700B15496 /* UserController.swift */; };
+		3FB729CC266167B100B15496 /* paymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729CB266167B100B15496 /* paymentController.swift */; };
 		3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6A26559F130031286A /* orderedItem.swift */; };
 		3FBEAC6F265941940031286A /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6E265941940031286A /* logInController.swift */; };
 		3FBEAC7126594DB10031286A /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC7026594DB10031286A /* registerController.swift */; };
@@ -48,6 +49,7 @@
 		3FB729C1265BD5AD00B15496 /* savedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedSettings.swift; sourceTree = "<group>"; };
 		3FB729C3265ECCCE00B15496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FB729C5265ECCE700B15496 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		3FB729CB266167B100B15496 /* paymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentController.swift; sourceTree = "<group>"; };
 		3FBEAC6A26559F130031286A /* orderedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderedItem.swift; sourceTree = "<group>"; };
 		3FBEAC6E265941940031286A /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		3FBEAC7026594DB10031286A /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				3FBEAC7026594DB10031286A /* registerController.swift */,
 				3FC7897726557894005148A3 /* OrderController.swift */,
 				3FE9461F263EFFD200E4FB62 /* AsianController.swift */,
+				3FB729CB266167B100B15496 /* paymentController.swift */,
 				3FE94621263EFFE000E4FB62 /* BurgerController.swift */,
 				3FE9461D263EFCED00E4FB62 /* PizzaController.swift */,
 				3F23CCEB263D8411008B9100 /* ViewController.swift */,
@@ -284,6 +287,7 @@
 				3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */,
 				3FE94620263EFFD200E4FB62 /* AsianController.swift in Sources */,
 				3FE94622263EFFE000E4FB62 /* BurgerController.swift in Sources */,
+				3FB729CC266167B100B15496 /* paymentController.swift in Sources */,
 				3FBEAC7126594DB10031286A /* registerController.swift in Sources */,
 				3FBEAC6F265941940031286A /* logInController.swift in Sources */,
 				3FBEAC78265A65EA0031286A /* DatabaseController.swift in Sources */,
