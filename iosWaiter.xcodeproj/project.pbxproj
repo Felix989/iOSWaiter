@@ -18,6 +18,7 @@
 		3FB729C4265ECCCE00B15496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C3265ECCCE00B15496 /* User.swift */; };
 		3FB729C6265ECCE700B15496 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729C5265ECCE700B15496 /* UserController.swift */; };
 		3FB729CC266167B100B15496 /* paymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729CB266167B100B15496 /* paymentController.swift */; };
+		3FB729CE2663D1DE00B15496 /* historyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB729CD2663D1DE00B15496 /* historyController.swift */; };
 		3FBEAC6B26559F130031286A /* orderedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6A26559F130031286A /* orderedItem.swift */; };
 		3FBEAC6F265941940031286A /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC6E265941940031286A /* logInController.swift */; };
 		3FBEAC7126594DB10031286A /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEAC7026594DB10031286A /* registerController.swift */; };
@@ -31,6 +32,7 @@
 		3FE94620263EFFD200E4FB62 /* AsianController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9461F263EFFD200E4FB62 /* AsianController.swift */; };
 		3FE94622263EFFE000E4FB62 /* BurgerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94621263EFFE000E4FB62 /* BurgerController.swift */; };
 		3FE94624263F121000E4FB62 /* GeneralOrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */; };
+		3FECA3312663F3A5000A1A63 /* indexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FECA3302663F3A5000A1A63 /* indexController.swift */; };
 		88759B616C2A8457D9018912 /* Pods_iosWaiter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEB51A36A5666E3B49535BE /* Pods_iosWaiter.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,7 @@
 		3FB729C3265ECCCE00B15496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FB729C5265ECCE700B15496 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		3FB729CB266167B100B15496 /* paymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentController.swift; sourceTree = "<group>"; };
+		3FB729CD2663D1DE00B15496 /* historyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyController.swift; sourceTree = "<group>"; };
 		3FBEAC6A26559F130031286A /* orderedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderedItem.swift; sourceTree = "<group>"; };
 		3FBEAC6E265941940031286A /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		3FBEAC7026594DB10031286A /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		3FE9461F263EFFD200E4FB62 /* AsianController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianController.swift; sourceTree = "<group>"; };
 		3FE94621263EFFE000E4FB62 /* BurgerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerController.swift; sourceTree = "<group>"; };
 		3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralOrderInfo.swift; sourceTree = "<group>"; };
+		3FECA3302663F3A5000A1A63 /* indexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexController.swift; sourceTree = "<group>"; };
 		6A5E0B923E3784C7F73CA1E0 /* Pods-iosWaiter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosWaiter.release.xcconfig"; path = "Target Support Files/Pods-iosWaiter/Pods-iosWaiter.release.xcconfig"; sourceTree = "<group>"; };
 		707BC5A85346C038DB57194C /* Pods-iosWaiter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosWaiter.debug.xcconfig"; path = "Target Support Files/Pods-iosWaiter/Pods-iosWaiter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 				3FE94623263F121000E4FB62 /* GeneralOrderInfo.swift */,
 				3FBEAC7226594DBE0031286A /* finishedOrderController.swift */,
 				3FB729BF265BD33500B15496 /* SettingsController.swift */,
+				3FB729CD2663D1DE00B15496 /* historyController.swift */,
+				3FECA3302663F3A5000A1A63 /* indexController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				3FB729CC266167B100B15496 /* paymentController.swift in Sources */,
 				3FBEAC7126594DB10031286A /* registerController.swift in Sources */,
 				3FBEAC6F265941940031286A /* logInController.swift in Sources */,
+				3FECA3312663F3A5000A1A63 /* indexController.swift in Sources */,
 				3FBEAC78265A65EA0031286A /* DatabaseController.swift in Sources */,
 				3FE9461E263EFCED00E4FB62 /* PizzaController.swift in Sources */,
 				3FB729C2265BD5AD00B15496 /* savedSettings.swift in Sources */,
@@ -302,6 +309,7 @@
 				3FBEAC7A265A680A0031286A /* Order.swift in Sources */,
 				3F23CCEA263D8411008B9100 /* AppDelegate.swift in Sources */,
 				3FE94624263F121000E4FB62 /* GeneralOrderInfo.swift in Sources */,
+				3FB729CE2663D1DE00B15496 /* historyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
