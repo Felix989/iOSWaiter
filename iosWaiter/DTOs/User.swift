@@ -51,7 +51,6 @@ class User {
                     let nickname = data["name"] as? String ?? "DEFAULT"
                     let pw = data["password"] as? String ?? "DEFAULT"
                         if(user.name == nickname && user.password == pw){
-                            // can log in
                             user.canLogIn = true
                             canLogIn = true
                             logInController.letVar = true
